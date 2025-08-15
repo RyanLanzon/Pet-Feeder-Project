@@ -1,0 +1,29 @@
+Step 4: Implement The Solution (Word Coding 
+
+Start System 
+
+Load feeding times (e.g 8 AM, 6 PM) 
+Set feeding amount from funnel (grams)
+Reset bowl weight to 0 
+Check funnel amount (how much food is currently in there)
+Initiate alert system (red = problem, orange = error, green = operational) 
+
+Start dispensary program 
+
+If it isn't feeding time, wait 1 minute before checking again
+If it is feeding time: 
+                 -  If bin level is below 15% send alert but keep initiating feeding dispenser 
+                 - Check for jams (food not moving or motor may be jammed) 
+                                      - If jam is detected stop motor 
+                                      - wait 10 minutes
+        - If 80% of food has been eaten
+                                       - Yes - log as success 
+                                        - No - send not eaten log 
+
+Manual Controls 
+
+              - Pause feeding if necessary 
+              -  Resume when ready 
+      
+Other Controls 
+Keep a log of results for (7 days)
